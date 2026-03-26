@@ -1,0 +1,31 @@
+{
+  "name": "habibi-restaurant-website",
+  "version": "1.0.0",
+  "description": "Premium Arabic & BBQ Restaurant Website - MERN Stack",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm:dev:frontend\" \"npm:dev:backend\"",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm dev",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "start:backend": "cd backend && npm start"
+  },
+  "keywords": [
+    "restaurant",
+    "mern",
+    "react",
+    "express",
+    "mongodb",
+    "tailwind",
+    "habibi",
+    "peshawar"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
